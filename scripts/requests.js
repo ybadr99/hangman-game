@@ -20,18 +20,6 @@ const getCountry = async (codeCountry) => {
   }
 };
 
-// const getLocation = () => {
-//   return fetch(`https://ipinfo.io/json?token=3911f91f6009fa`).then(
-//     (response) => {
-//       if (response.status === 200) {
-//         return response.json();
-//       } else {
-//         throw new Error("can not handle the location request");
-//       }
-//     }
-//   );
-// };
-
 const getLocation = async () => {
   const response = await fetch(`https://ipinfo.io/json?token=3911f91f6009fa`);
   if (response.status === 200) {
